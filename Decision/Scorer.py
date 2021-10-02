@@ -1,10 +1,15 @@
-from sklearn import tree
+import pandas as pd
+# from sklearn import tree
 
-X = 
-Y = 
+print("Hello rest of HackDFW, behold, the AUXILIAM project, hail us")
+df = pd.read_csv("bigDataFeatures.csv")
+df.head()
 
-classifier = tree.DecisionTreeClassifier()
-classifier.fit(X, Y)
+# X = 
+# Y = 
+
+# classifier = tree.DecisionTreeClassifier()
+# classifier.fit(X, Y)
 
 
 # CSV to python data table
