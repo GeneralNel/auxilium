@@ -1,4 +1,5 @@
-from sklearn import tree
+import pandas as pd
+# from sklearn import tree
 
 scoreSum = 0
 
@@ -60,6 +61,15 @@ scoreSum += pred[0]
 
 print(scoreSum / 3)
 
+print("Hello rest of HackDFW, behold, the AUXILIAM project, hail us")
+df = pd.read_csv("bigDataFeatures.csv")
+df.head()
+
+# X = 
+# Y = 
+
+# classifier = tree.DecisionTreeClassifier()
+# classifier.fit(X, Y)
 
 
 # CSV to python data table
