@@ -7,3 +7,28 @@ body {
   background-color: #fff;
   font-size: 16px;
 }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  background-color: #dbdbdb;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+}
+/* 
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
