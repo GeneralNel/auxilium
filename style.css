@@ -4,7 +4,14 @@ html,
 body {
   font-family: "Nunito-Sans", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(178, 209, 208) 0%,
+    rgb(185, 209, 211) 35%,
+    rgb(255, 255, 255) 100%
+  );
   font-size: 16px;
 }
 .flex-container {
@@ -13,7 +20,16 @@ body {
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: space-between;
-  background-color: #dbdbdb;
+}
+
+.main-body {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.row {
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
@@ -23,12 +39,46 @@ body {
 .subtitle {
   text-align: center;
 }
-/* 
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-} */
+
+/* button styling*/
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "GENERATE";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
