@@ -30,12 +30,12 @@ clfIncome = clfIncome.fit(X, Y)
 
 
 print("Hello rest of HackDFW, behold, the AUXILIAM project, hail us")
-df = pd.read_csv("bigDataFeatures.csv")
+df = pd.read_csv("a.csv")
 
 for idx, each in enumerate(df.iloc):
     scoreSum = 0
 
-    sib, lap, val = each[1], each[2], int(each[3])
+    sib, lap, val = int(each[2]), int(each[3]), int(each[4])
 
     if sib < 0: sib = 0
     if sib > 9: sib = 9 
