@@ -70,4 +70,4 @@ for idx, each in enumerate(df.iloc):
 
 df.sort_values('Score')
 
-df.to_csv('bigDataFeatures.csv')
+df.to_csv('Result.csv')
