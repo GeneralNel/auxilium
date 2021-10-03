@@ -67,3 +67,7 @@ for idx, each in enumerate(df.iloc):
 
 
     df.at[idx, "Score"] = scoreSum / 3
+
+df.sort_values('Score')
+
+df.to_csv('bigDataFeatures.csv')
